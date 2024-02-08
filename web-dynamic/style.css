@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em ;
+}
+.connect_build{
+    font-size: 30px;
+    color: white;
+}
+.button{
+    display: flex;
+    gap: 1em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.button>button{
+    background-color: rgb(59, 88, 59);
+    border: none;
+    color: white;
+    padding: .8em 2em;
+    border-radius: 8px;
+    transition: all;
+    transition-duration: 0.9s;
+}
+.button>button:hover{
+background-color: rgb(128, 247, 128);
+}
+
+.hero_info{
+    text-align: center;
+}
