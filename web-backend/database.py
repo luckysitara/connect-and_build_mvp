@@ -3,16 +3,16 @@ import mysql.connector
 # Connect to the MySQL server
 connection = mysql.connector.connect(
     host="localhost",
-    user="your_username",
-    password="your_password",
-    database="your_database"
+    user="root",
+    password="",
+    database="connectAndBuild"
 )
 
 # Create a cursor object
 cursor = connection.cursor()
 
 # Example query
-query = "SELECT * FROM your_table"
+query = "SELECT * FROM user"
 
 # Execute the query
 cursor.execute(query)
