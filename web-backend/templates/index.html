@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect & Build</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
     <header class="header" >
@@ -16,8 +16,9 @@
 
 
 <div class="button">
-<button type="button"><a href="./login.html">Login</a></button>
-<button type="button"><a href="./signup.html">Sign Up</a></button>
+<button type="button"><a href="{{ url_for('login.login_route') }}">Login</a></button>
+<button type="button"><a href="{{ url_for('signup.signup_route') }}">Sign Up</a></button>
+
 </div>
     </header>
     

@@ -27,12 +27,6 @@ class DatabaseConnector:
         self.cursor.execute(query, (email, password))
         self.connection.commit()
 
-    def authenticate_user(self, email, password):
-        query = "SELECT * FROM user WHERE email = %s AND password = %s"
-        self.cursor.execute(query, (email, password))
-        result = self.cursor.fetchone()
-        return result is not None
-
     def close_connection(self):
         self.cursor.close()
         self.connection.close()

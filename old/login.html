@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="../static/style.css">
-
-    <style>
-        .flash-message {
-            text-align: center;
-            color: red;
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
     <header class="header">
@@ -29,15 +21,6 @@
         <div class="signup_div">
             <p>
                 Login 
-                {% with messages = get_flashed_messages(with_categories=true) %}
-                    {% if messages %}
-                        {% for category, message in messages %}
-                            <div class="flash-message">
-                                {{ message }}
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endwith %}
             </p>
 
             <form action="" method="post">

@@ -4,48 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+    <style>
+        .flash-message {
+            text-align: center;
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header class="header" >
+    <header class="header">
         <p>
-            <a href="./index.html" class="connect_build" > Connect & Build</a>
+            <a href="./index.html" class="connect_build"> Connect & Build</a>
         </p>
     </header>
 
     <main>
-        
-<h1 class="hero_info" >
-    We Connect Professionals, Artisans, Companies, Stores and Clients in the Industry
-</h1>
+        <h1 class="hero_info">
+            We Connect Professionals, Artisans, Companies, Stores and Clients in the Industry
+        </h1>
 
-<div class="signup_div" >
+        <div class="signup_div">
+            <p>
+                Sign Up
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="flash-message">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </p>
 
-    <p>
-        Sign Up
-    </p>
+            <form action="" method="post">
+                {{ form.csrf_token }} <!-- Include the CSRF token here -->
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email" id="user_email" class="form_input">
+                </div>
 
-<form action="" method="post">
-<div>
-    <input type="email" name="email" id="email" placeholder="Email" id="user_email" class="form_input" >
-</div>
-<div>
-    <input type="password" name="password" id="password" placeholder="password" id="user_password" class="form_input">
-</div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password" id="user_password" class="form_input">
+                </div>
 
-<div>
-    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="form_input">
-</div>
-<button type="submit" class="login_btn">Create Account</button>
+                <div>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="form_input">
+                </div>
+                <button type="submit" class="login_btn">Create Account</button>
 
-<p style="text-align: center; margin-top: .7em; ">OR</p>
+                <p style="text-align: center; margin-top: .7em; ">OR</p>
 
-<button type="submit" class="login_btn">Continue With Google</button>
-</form>
-<a href="./login.html">login</a>
-
-</div>
-
+                <button type="submit" class="login_btn">Continue With Google</button>
+            </form>
+            <a href="./login.html">login</a>
+        </div>
     </main>
 </body>
 </html>
+
