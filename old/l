@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,40 +13,47 @@
         </p>
     </header>
 
-    <main>
-        
+<main>  
 <h1 class="hero_info" >
     We Connect Professionals, Artisans, Companies, Stores and Clients in the Industry
 </h1>
 
-<div class="signup_div" >
 
+
+<div class="signup_div" >
     <p>
-        Sign Up
+        Login 
     </p>
 
 <form action="" method="post">
-<input type="email" name="email" id="email" placeholder="Email" class="user_email" >
-<input type="password" name="password" id="password" placeholder="password" class="user_password">
-<input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
-<button type="submit">Create Account</button>
 
-<p>OR</p>
+  <div>
+    <input type="email" name="email" id="email" placeholder="Email" id="user_email" class="form_input" >
 
-<button type="submit">Continue With Google</button>
-</form>
-<a href="./login.html">login</a>
+  </div>
 
+<div>
+    
+    <input type="password" name="password" id="password" placeholder="password" id="user_password" class="form_input" >
 </div>
 
-    </main>
 
-    <footer>
-        
+    <button type="submit" class="login_btn" >Login</button>
+
+</form>
+
+<div class="sign_up_link" ><p>No Account</p>
+<a href="./signup.html">Sign Up</a>
+</div>
+
+</div>
+</main>
+
+
+    <!-- <footer>
         <p>
             Follow us
         </p>
-
-    </footer>
+    </footer> -->
 </body>
 </html>
