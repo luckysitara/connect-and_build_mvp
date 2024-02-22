@@ -9,7 +9,7 @@ body{
 header{
     background-color: rgb(78, 204, 78);
     text-align: center;
-    background-image: url("./assets/connect_build.jpg");
+    background-image: url("./connect_build.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 7em;
