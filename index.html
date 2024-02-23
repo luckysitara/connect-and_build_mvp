@@ -3,112 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
     <title>Connect and Build</title>
 </head>
-<body>
-    <header>
+<body style="background-color: black;">
 
-        <!-- navigation to features and about sections -->
-        <nav class="nav_links">
-            <a href="#features_section">Features</a>
-            <a href="#about_section">About</a>
-        </nav>
+<header style="background-color: black; text-align: center; background-image: url('./connect_build.jpg'); background-repeat: no-repeat; background-size: cover; padding-bottom: 7em; height: 100vh;">
 
-        <!-- project title -->
-        <h1 class="hero_title" >
-            Connect & Build
-        </h1>
+    <!-- navigation to features and about sections -->
+    <nav class="nav_links" style="background-color: rgb(58, 231, 58); display: flex; justify-content: flex-end; gap: 1.5em; padding: 1em 2em;">
+        <a href="#features_section" style="text-decoration: none; color: white;">Features</a>
+        <a href="#about_section" style="text-decoration: none; color: white;">About</a>
+    </nav>
 
-        <!-- project description -->
-        <p class="project_desc" >
-            We Connect Professionals, Artisans, Companies, Stores and Clients in the Industry
+    <!-- project title -->
+    <h2 class="hero_title" style="margin-top: 1.5em; font-size: 4rem; color: white;">
+        Connect & Build
+    </h2>
+
+    <!-- project description -->
+    <p class="project_desc" style="margin-top: 1em; margin-bottom: 1em; font-size: 1.2rem; font-weight: 600; color: white;">
+        We Connect Professionals, Artisans, Companies, Stores and Clients in the Industry
+    </p>
+
+    <!-- link to deployed project on github pages -->
+    <button type="button" class="deploy_project" style="padding: 1em 2.5em; border-radius: 8px; border: solid rgb(134, 224, 134); background-color: rgb(55, 100, 55);">
+        <a href='http://web-02.bugacademy.tech' style="color: white; text-decoration: none;">Deploy Project</a>
+    </button>
+</header>
+
+<main>
+    <section id="features_section" style="text-align: center; font-weight: 600; font-size: 2rem; color: white; background-color: black;">
+
+        <!-- professionals section -->
+        <section>
+            <div class="feature_images" style="width: 40%; margin: 1.5em auto;">
+                <img src="./connect_build.jpg" alt="professionals" style="width: 100%;">
+            </div>
+            <p>
+                Professionals
+            </p>
+        </section>
+
+        <!-- artisans section -->
+        <section>
+            <div class="feature_images" style="width: 40%; margin: 1.5em auto;">
+                <img src="./artisans.jpg" alt="Artisans" style="width: 100%;">
+            </div>
+            <p>
+                Artisans
+            </p>
+        </section>
+
+        <!-- stores section -->
+        <section>
+            <div class="feature_images" style="width: 40%; margin: 1.5em auto;">
+                <img src="./stores.jpg" alt="Stores" style="width: 100%;">
+            </div>
+            <p>
+                Stores
+            </p>
+        </section>
+    </section>
+
+    <!-- about section -->
+    <section id="about_section" style="color: white; text-align: center; display: flex; flex-direction: column; gap: 2.4em; padding: 4em 7em;">
+        <h2>About Me</h2>
+        <p>
+            Connect and Build was inspired by me from people's experiences and frustrations within the civil engineering and construction industry. Looking at the stories about the challenges faced in finding the right professionals, artisans, or companies for various projects sparked the idea for this platform. Witnessing the inefficiencies and roadblocks encountered, I became determined to create a solution that would streamline the process and facilitate seamless connections within the industry. This project is not just a requirement for Holberton School; it is a passion project that I've poured my heart and soul into. Drawing inspiration from my uncle's experiences and fueled by my own desire to make a meaningful impact, I embarked on a journey to bring Connect and Build to life.
         </p>
-
-        <!-- link to deployed project on github pages -->
-        <button type="button" class="deploy_project" >
-            <a href='http://web-02.bugacademy.tech'>Deploy Project</a>
-        </button>
-    </header>
-
-
-    <main>
-
-<section id="features_section" >
-
-
-
-
-    
-<!-- professionals section -->
-<section>
-    <div class="feature_images" >
-        <img src="./connect_build.jpg" alt="professionals">
-    </div>
-    <p>
-        Proffesionals
-    </p>
-</section>
-
-<!-- artisans section -->
-<section>
-    <div class="feature_images" >
-        <img src="./artisans.jpg" alt="Artisans">
-    </div>
-    <p>
-        Artisans
-    </p>
-</section>
-
-<!-- stores section -->
-<section>
-    <div class="feature_images" >
-        <img src="./stores.jpg" alt="Stores">
-    </div>
-    <p>
-        Stores
-    </p>
-</section>
-
-
-</section>
-
-
-<!-- about section -->
-
-<section id="about_section" >
-
-<h2>About Me</h2>
-
-<p>
-Connect and Build was inspired by me from people's experiences and frustrations within the civil engineering and construction industry. Looking at the stories about the challenges faced in finding the right professionals, artisans, or companies for various projects sparked the idea for this platform. Witnessing the inefficiencies and roadblocks encountered, I became determined to create a solution that would streamline the process and facilitate seamless connections within the industry.
-This project is not just a requirement for Holberton School; it is a passion project that I've poured my heart and soul into. Drawing inspiration from my uncle's experiences and fueled by my own desire to make a meaningful impact, I embarked on a journey to bring Connect and Build to life.
-</p>
-
-</section>
-
+    </section>
 </main>
 
-
 <!-- links to github, twitter and linkedin -->
-<footer>
-<div class="social_links" >
-    <a href="#">
-        Github
-    </a>
-    
-    <a href="#">
-        Twitter
-    </a>
-    
-    
-    <a href="#">
-    Linkedin
-    </a>
-</div>
-
-
+<footer style="display: flex; justify-content: center; gap: 2em; padding: 4em;">
+    <a href="#" style="color: dodgerblue;">Github</a>
+    <a href="#" style="color: dodgerblue;">Twitter</a>
+    <a href="#" style="color: dodgerblue;">Linkedin</a>
 </footer>
+
 </body>
 </html>
+

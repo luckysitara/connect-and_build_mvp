@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: black;
 }
-header{
-    background-color: black;
+
+header {
+    background-color: black; /* Change to black or sky blue */
     text-align: center;
     background-image: url("./connect_build.jpg");
     background-repeat: no-repeat;
@@ -16,54 +18,61 @@ header{
     height: 100vh;
 }
 
-.nav_links{
+.nav_links {
     background-color: rgb(58, 231, 58);
     display: flex;
     justify-content: flex-end;
     gap: 1.5em;
     padding: 1em 2em;
 }
+
 .nav_links > a {
     text-decoration: none;
     color: white;
 }
-.hero_title{
+
+.hero_title {
     margin-top: 1.5em;
     font-size: 4rem;
 }
-.project_desc{
+
+.project_desc {
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 1.2rem;
     font-weight: 600;
 }
-.deploy_project{
-    padding: 1em 2.5em ;
+
+.deploy_project {
+    padding: 1em 2.5em;
     border-radius: 8px;
-    border: solid rgb(134, 224, 134) ;
+    border: solid rgb(134, 224, 134);
     background-color: rgb(55, 100, 55);
 }
-
 
 .deploy_project > a {
     color: white;
     text-decoration: none;
 }
-.feature_images{
+
+.feature_images {
     width: 40%;
-margin: 1.5em auto;
+    margin: 1.5em auto;
 }
-.feature_images > img{
+
+.feature_images > img {
     width: 100%;
 }
-#features_section{
+
+#features_section {
     text-align: center;
     font-weight: 600;
     font-size: 2rem;
     color: white;
     background-color: black;
 }
-#about_section  {
+
+#about_section {
     color: white;
     text-align: center;
     display: flex;
@@ -71,13 +80,16 @@ margin: 1.5em auto;
     gap: 2.4em;
     padding: 4em 7em;
 }
-.social_links{
+
+.social_links {
     display: flex;
     justify-content: center;
     gap: 2em;
     padding: 4em;
 }
+
 .social_links > a {
     color: dodgerblue;
     /* text-decoration: none; */
 }
+
